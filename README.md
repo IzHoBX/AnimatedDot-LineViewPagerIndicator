@@ -1,1 +1,1 @@
-# AnimatedViewPagerIndicator
+# AnimatedDot-LineViewPagerIndicator
