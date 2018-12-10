@@ -14,7 +14,7 @@
 
     </android.support.v4.view.ViewPager>
 
-    <com.izho.progressbartest.AnimatedDotAndLineViewPagerIndicator
+    <com.izho.progressbartest.AnimatedDotLineViewPagerIndicator
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -31,12 +31,13 @@
         android:background="@color/black" />
 
     <Button
-        android:layout_width="50dp"
+        android:id="@+id/button"
+        android:layout_width="67dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
+        android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/indicator"
-        android:id="@+id/button"/>
+        app:layout_constraintTop_toBottomOf="@+id/indicator" />
 
 </android.support.constraint.ConstraintLayout>

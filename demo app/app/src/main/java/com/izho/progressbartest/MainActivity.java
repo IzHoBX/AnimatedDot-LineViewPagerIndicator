@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         x.setAdapter(adapter);
         View view = findViewById(R.id.indicator);
 
-        AnimatedDotAndLineViewPagerIndicator indicator = (AnimatedDotAndLineViewPagerIndicator) view;
+        AnimatedDotLineViewPagerIndicator indicator = (AnimatedDotLineViewPagerIndicator) view;
         indicator.setStrokeWidth(7);
         indicator.setSeparationLineLength(getResources().getDimension(R.dimen.default_separation));
         indicator.setFillColor(Color.parseColor("#4286f4"));

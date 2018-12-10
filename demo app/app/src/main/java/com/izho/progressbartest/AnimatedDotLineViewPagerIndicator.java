@@ -13,10 +13,10 @@ import static android.graphics.Paint.ANTI_ALIAS_FLAG;
 import static android.widget.LinearLayout.HORIZONTAL;
 
 /**
- * This indicator is written during CALLAPP-11044, where backward scrolling of viewpager is not in scope.
- * Please implement animation for backward scrolling if required.
+ * Note: This indicator is developed to resemble progress bar,
+ * where backward scrolling of viewpager is not in scope.
  */
-public class AnimatedDotAndLineViewPagerIndicator extends CirclePageIndicator {
+public class AnimatedDotLineViewPagerIndicator extends CirclePageIndicator {
     private ValueAnimator animator;
     private int currentAnimatedValue = 1;
     private int lastAnimatedPosition = 0;
@@ -28,15 +28,15 @@ public class AnimatedDotAndLineViewPagerIndicator extends CirclePageIndicator {
 
     private long DOT_ANIMATION_DURATION = 400;
 
-    public AnimatedDotAndLineViewPagerIndicator(Context context) {
+    public AnimatedDotLineViewPagerIndicator(Context context) {
         super(context);
     }
 
-    public AnimatedDotAndLineViewPagerIndicator(Context context, AttributeSet attrs) {
+    public AnimatedDotLineViewPagerIndicator(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public AnimatedDotAndLineViewPagerIndicator(Context context, AttributeSet attrs, int defStyle) {
+    public AnimatedDotLineViewPagerIndicator(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 
@@ -171,7 +171,7 @@ public class AnimatedDotAndLineViewPagerIndicator extends CirclePageIndicator {
     @Override
     public void setViewPager(ViewPager view, int initialPosition) {
         super.setViewPager(view, initialPosition);
-        this.mViewPager = mViewPager;
+        this.mViewPager = view;
     }
 
     public float getSeparationLineLength() {
